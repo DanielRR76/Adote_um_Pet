@@ -12,13 +12,11 @@ function PetForm({handleSubmit,colorpets,petData, btnText}) {
         setPet({ ...pet, images:[...e.target.files] })
         
     }
-    //console.log(preview)
 
     function handleonChange(e) {
         setPet({ ...pet, [e.target.name]: e.target.value })
         
     }
-    //console.log(pet)
 
     function handleColor(e){
         setPet({ ...pet, color: e.target.options[e.target.selectedIndex].text })
@@ -29,7 +27,6 @@ function PetForm({handleSubmit,colorpets,petData, btnText}) {
         console.log(pet)
         handleSubmit(pet)
     }
-    //console.log(pet.images)
     return (
         <form onSubmit={submit} className={formStyles.form_container}>
             <div className={formStyles.preview_pet_images}>
