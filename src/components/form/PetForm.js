@@ -19,6 +19,7 @@ function PetForm({handleSubmit,colorpets,petData, btnText}) {
         
     }
     //console.log(pet)
+    //testar regras
 
     function handleColor(e){
         setPet({ ...pet, color: e.target.options[e.target.selectedIndex].text })
